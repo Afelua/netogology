@@ -21,4 +21,4 @@ const AppRoot = () =>
         </main>
     </Router>;
 
-render(<AppRoot/>, rootEl);
+render(<AppRoot />, rootEl);
