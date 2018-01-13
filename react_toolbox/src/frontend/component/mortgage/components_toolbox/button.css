@@ -1,0 +1,7 @@
+.button {
+  background: red;
+  padding: 10px 20px;
+  height: auto;
+  min-width: 280px;
+  color: black !important;
+}
