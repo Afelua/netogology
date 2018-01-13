@@ -4,19 +4,19 @@ const webpack = require('webpack');
 const settings = {
   entry: {
     bundle: [
-      "react-hot-loader/patch",
-      "./src/frontend/index.js"
+      'react-hot-loader/patch',
+      './src/index.js'
     ]
   },
   output: {
-    filename: "[name].js",
-    publicPath: "/",
-    path: path.resolve("build")
+    filename: '[name].js',
+    publicPath: '/',
+    path: path.resolve('build')
   },
   resolve: {
-    extensions: [".js", ".json", ".css"]
+    extensions: ['.js', '.json', '.css']
   },
-  devtool: "eval-source-map",
+  devtool: 'eval-source-map',
   module: {
     rules: [
       {
@@ -24,16 +24,16 @@ const settings = {
         loader: 'babel-loader',
         options: {
           presets: [
-            ["es2015", { modules: false }],
-            "stage-2",
-            "react"
+            ['es2015', { modules: false }],
+            'stage-2',
+            'react'
           ],
           plugins: [
-            "transform-node-env-inline"
+            'transform-node-env-inline'
           ],
           env: {
             development: {
-              plugins: ["react-hot-loader/babel"]
+              plugins: ['react-hot-loader/babel']
             }
           }
         }
@@ -41,24 +41,24 @@ const settings = {
       {
         test: /\.css$/,
         use: [
-          "style-loader",
+          'style-loader',
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               modules: true,
               sourceMap: true,
               importLoaders: 1,
-              localIdentName: "[name]--[local]--[hash:base64:8]"
+              localIdentName: '[name]--[local]--[hash:base64:8]'
             }
           },
-          "postcss-loader" // has separate config, see postcss.config.js nearby
+          'postcss-loader' // has separate config, see postcss.config.js nearby
         ]
-      },
+      }
     ]
   },
   devServer: {
-    contentBase: path.resolve("src/www"),
-    publicPath: "http://localhost:8080/", // full URL is necessary for Hot Module Replacement if additional path will be added.
+    contentBase: path.resolve('src/public'),
+    publicPath: 'http://localhost:8080/', // full URL is necessary for Hot Module Replacement if additional path will be added.
     quiet: false,
     hot: true,
     historyApiFallback: true,
@@ -69,8 +69,8 @@ const settings = {
     new webpack.NamedModulesPlugin(),
     new webpack.LoaderOptionsPlugin({
       debug: true
-    }),
-  ],
+    })
+  ]
 };
 
 module.exports = settings;
