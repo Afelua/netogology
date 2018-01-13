@@ -34,6 +34,7 @@
   "dependencies": {
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.4.2",
+    "react-css-themr": "^2.1.2",
     "react-dom": "^15.4.2",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
@@ -59,15 +60,34 @@
     "postcss-loader": "^1.2.2",
     "postcss-mixins": "^5.4.1",
     "react-hot-loader": "^3.0.0-beta.6",
+    "react-toolbox-themr": "^1.0.2",
     "redux-devtools-extension": "^1.0.0",
     "style-loader": "^0.13.1",
     "webpack": "^2.2.0",
     "webpack-dev-server": "^2.2.0"
   },
+  "reactToolbox": {
+    "include": [
+      "BUTTON",
+      "DATE_PICKER",
+      "DIALOG",
+      "INPUT",
+      "AUTOCOMPLETE"
+    ],
+    "customProperties": {
+      "animation-duration": "0.3s",
+      "color-accent": "var(--palette-pink-a200)",
+      "color-accent-dark": "var(--palette-pink-700)",
+      "color-primary-contrast": "var(--color-dark-contrast)",
+      "color-accent-contrast": "var(--color-dark-contrast)"
+    },
+    "output": "assets/react-toolbox"
+  },
   "scripts": {
     "start": "node_modules/.bin/cross-env NODE_ENV=development node_modules/.bin/webpack-dev-server --colors --config webpack.config.js",
     "build": "node_modules/.bin/cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.config.js",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "toolbox": "react-toolbox-themr"
   },
   "license": "MIT",
   "homepage": "https://github.com/react-toolbox/react-toolbox-example#readme"
