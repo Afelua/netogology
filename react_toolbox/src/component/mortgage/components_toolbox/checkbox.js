@@ -1,5 +1,5 @@
 import React from 'react';
-import Checkbox from 'react-toolbox/lib/checkbox/Checkbox';
+import Checkbox from 'react-toolbox/lib/checkbox';
 
 class MortgateCalculatorConfirmation extends React.Component {
     state = { check: true };

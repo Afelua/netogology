@@ -69,7 +69,7 @@
   "reactToolbox": {
     "include": [
       "BUTTON",
-      "DATE_PICKER",
+      "CHECKBOX",
       "DIALOG",
       "INPUT",
       "AUTOCOMPLETE"

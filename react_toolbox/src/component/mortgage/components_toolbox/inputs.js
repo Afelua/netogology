@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from 'react-toolbox/lib/input/Input';
+import Input from 'react-toolbox/lib/input';
 
 class MortgateCalculatorInputs extends React.Component {
     state = { price: '', money: '', duration: '' };

@@ -1,5 +1,5 @@
 import React from 'react';
-import Autocomplete from 'react-toolbox/lib/autocomplete/Autocomplete';
+import Autocomplete from 'react-toolbox/lib/autocomplete';
 
 const source = {
     'new_building,': 'Квартира в новостройке',
