@@ -1,10 +1,10 @@
 {
-  "name": "react-toolbox-example",
-  "description": "A set of complementary tools to ReactJS.",
+  "name": "Netogology - React Instruments",
+  "description": "React Toolbox, React DevTools",
   "version": "0.12.0",
   "author": {
-    "name": "React Toolbox Team",
-    "url": "http://github.com/react-toolbox"
+    "name": "Elena Semenova",
+    "url": "https://github.com/Afelua/netogology/tree/master/react_toolbox"
   },
   "contributors": [
     {
@@ -14,18 +14,19 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/react-toolbox/react-toolbox-example.git"
+    "url": "git+https://github.com/Afelua/netogology/tree/master/react_toolbox.git"
   },
   "bugs": {
-    "url": "https://github.com/react-toolbox/react-toolbox/issues",
-    "email": "issues@react-toolbox.com"
+    "url": "https://github.com/Afelua/netogology/tree/master/react_toolbox/issues",
+    "email": "mail@elenasemenova.ru"
   },
   "keywords": [
     "components",
-    "material design",
+    "react toolbox",
     "react",
     "react-component",
-    "toolbox"
+    "toolbox",
+    "react devtools"
   ],
   "engines": {
     "node": ">=4.3.0",
@@ -90,5 +91,5 @@
     "toolbox": "react-toolbox-themr"
   },
   "license": "MIT",
-  "homepage": "https://github.com/react-toolbox/react-toolbox-example#readme"
+  "homepage": "https://github.com/Afelua/netogology/tree/master/react_toolbox#readme"
 }
