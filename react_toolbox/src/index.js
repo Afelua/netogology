@@ -1,24 +1,22 @@
 import React from 'react';
-import { overrideComponentTypeChecker } from 'react-toolbox';
-import App from './component/App';
+
 import Modal from './component/Modal';
-import Progress from './component/Progress';
-import MortgageCalculator from './component/mortgage/index';
+import MortgageCalculator from './component/mortgage';
+import MortgageCalculatorToolbox from './component/mortgage_toolbox';
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
 import { render } from 'react-dom';
 
 import theme from '../assets/react-toolbox/theme';
-import ThemeProvider from 'react-toolbox/lib/ThemeProvider';
+import "..//assets/react-toolbox/theme.css";
 
 const AppRoot = () =>
     <ThemeProvider theme={theme}>
         <Router>
             <main>
                 <Switch>
-                    <Route exact path='/' component={App} />
+                    <Route exact path='/' component={MortgageCalculator} />
                     <Route path='/modal' component={Modal} />
-                    <Route path='/progress' component={Progress} />
-                    <Route path='/mortgage' component={MortgageCalculator} />
+                    <Route path='/mortgage-toolbox' component={MortgageCalculatorToolbox} />
                 </Switch>
             </main>
         </Router>
