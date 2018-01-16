@@ -9,8 +9,12 @@ const source = {
 };
 
 class AutocompleteTest extends React.Component {
-    state = {
-        countries: ['ES-es', 'TH-th']
+
+    constructor (...args) {
+        super(...args);
+        this.state = {
+            countries: ['ES-es', 'TH-th']
+        };
     }
 
     handleChange = (value) => {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MortgateCalculatorConfirmation = () => (
+const Checkbox = () => (
     <div>
         <label>
             Могу подтвердить доход документально:
@@ -9,4 +9,4 @@ const MortgateCalculatorConfirmation = () => (
     </div>
 );
 
-export default MortgateCalculatorConfirmation;
+export default Checkbox;

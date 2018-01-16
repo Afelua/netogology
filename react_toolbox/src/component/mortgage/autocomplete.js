@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MortgateCalculatorType = () => (
+const Autocomolete = () => (
     <div>
         Тип квартиры:<br/>
         <select>
@@ -11,4 +11,4 @@ const MortgateCalculatorType = () => (
     </div>
 );
 
-export default MortgateCalculatorType;
+export default Autocomolete;

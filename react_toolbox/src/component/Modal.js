@@ -10,18 +10,17 @@ class Modal extends React.Component {
 
     handleToggle = () => {
         this.setState({active: false});
-    }
+    };
 
     actions = [
-        { label: "Отменить", onClick: this.handleToggle },
-        { label: "Сохранить", onClick: this.handleToggle }
+        {label: 'Отменить', onClick: this.handleToggle},
+        {label: 'Сохранить', onClick: this.handleToggle}
     ];
 
-    render ()
-    {
+    render () {
         return (
             <div>
-                <Button label='Подтвердить заказ' onClick={this.handleToggle} />
+                <Button label='Подтвердить заказ' onClick={this.handleToggle}/>
                 <Dialog
                     actions={this.actions}
                     active={this.state.active}

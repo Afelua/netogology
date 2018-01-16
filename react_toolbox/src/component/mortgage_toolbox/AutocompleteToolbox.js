@@ -7,9 +7,15 @@ const source = {
     'countryhouse': 'Загородный дом'
 };
 
-class MortgateCalculatorType extends React.Component {
-    state = {
-        apartment: ''
+class AutocompleteToolbox extends React.Component {
+
+    constructor (...args) {
+        super(...args);
+        this.state = {
+            apartment: ''
+        };
+
+        this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange = (value) => {
@@ -32,5 +38,5 @@ class MortgateCalculatorType extends React.Component {
     }
 }
 
-export default MortgateCalculatorType;
+export default AutocompleteToolbox;
 

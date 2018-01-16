@@ -1,7 +1,7 @@
 import React from 'react';
 
-const MortgateCalculatorButton = () => (
+const Button = () => (
     <button>Отправить</button>
 );
 
-export default MortgateCalculatorButton;
+export default Button;

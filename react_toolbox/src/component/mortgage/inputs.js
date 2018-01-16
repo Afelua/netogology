@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MortgateCalculatorInputs = () => (
+const Inputs = () => (
     <div>
         <label>
             Стоимость: <input type="number" name="price" value="2000000"/> руб.
@@ -18,4 +18,4 @@ const MortgateCalculatorInputs = () => (
     </div>
 );
 
-export default MortgateCalculatorInputs;
+export default Inputs;

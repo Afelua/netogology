@@ -1,8 +1,14 @@
 import React from 'react';
 import Checkbox from 'react-toolbox/lib/checkbox';
 
-class MortgateCalculatorConfirmation extends React.Component {
-    state = { check: true };
+class CheckboxToolbox extends React.Component {
+
+    constructor (...args) {
+        super(...args);
+        this.state = {
+            check: true
+        };
+    }
 
     handleChange = (field, value) => {
         this.setState({...this.state, [field]: value});
@@ -21,4 +27,4 @@ class MortgateCalculatorConfirmation extends React.Component {
     }
 }
 
-export default MortgateCalculatorConfirmation;
+export default CheckboxToolbox;
