@@ -26,3 +26,4 @@ class InputsToolbox extends React.Component {
 }
 
 export default InputsToolbox;
+

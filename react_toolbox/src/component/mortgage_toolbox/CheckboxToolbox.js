@@ -28,3 +28,4 @@ class CheckboxToolbox extends React.Component {
 }
 
 export default CheckboxToolbox;
+
