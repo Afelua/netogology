@@ -9,7 +9,7 @@ class Modal extends React.Component {
     };
 
     handleToggle = () => {
-        this.setState({active: !this.state.active});
+        this.setState({active: false});
     }
 
     actions = [
