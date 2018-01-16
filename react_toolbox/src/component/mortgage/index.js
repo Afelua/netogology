@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Autocomplete from './Autocomplete';
-import Inputs from './Inputs';
-import Checkbox from './Checkbox';
-import Button from './Button';
+import Autocomplete from './autocomplete';
+import Inputs from './inputs';
+import Checkbox from './checkbox';
+import Button from './button';
 
 const styles = {
     width: '350px',
