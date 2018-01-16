@@ -2,7 +2,6 @@ import React from 'react';
 
 import Autocomplete from './autocomplete';
 import Inputs from './inputs';
-import Checkbox from './checkbox';
 import Button from './button';
 
 const styles = {
@@ -18,7 +17,6 @@ const MortgateCalculator = () => (
         <form action="">
             <Autocomplete/>
             <Inputs/>
-            <Checkbox/>
             <Button/>
         </form>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Autocomolete = () => (
+const Autocomplete = () => (
     <div>
         Тип квартиры:<br/>
         <select>
@@ -11,4 +11,4 @@ const Autocomolete = () => (
     </div>
 );
 
-export default Autocomolete;
+export default Autocomplete;
