@@ -11,7 +11,7 @@ import ThemeProvider from 'react-toolbox/lib/ThemeProvider';
 import Modal from './component/Modal';
 import MortgageCalculator from './component/mortgage';
 import MortgageCalculatorToolbox from './component/mortgage_toolbox';
-import Step1 from './component/mortgage_toolbox_steps';
+import Step1 from './component/mortgage_toolbox_steps/step1';
 
 const AppRoot = () =>
     <ThemeProvider theme={theme}>

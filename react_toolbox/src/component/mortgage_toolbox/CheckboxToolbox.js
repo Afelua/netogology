@@ -8,10 +8,12 @@ class CheckboxToolbox extends React.Component {
         this.state = {
             check: true
         };
+
+        this.handleChange = this.handleChange.bind(this);
     }
 
-    handleChange = (field, value) => {
-        this.setState({...this.state, [field]: value});
+    handleChange = () => {
+        this.setState({['check']: !this.state.check});
     };
 
     render () {
@@ -20,7 +22,7 @@ class CheckboxToolbox extends React.Component {
                 <Checkbox
                     checked={this.state.check}
                     label="Могу подтвердить доход документально"
-                    onChange={this.handleChange.bind(this, 'check')}
+                    onChange={this.handleChange}
                 />
             </div>
         );
