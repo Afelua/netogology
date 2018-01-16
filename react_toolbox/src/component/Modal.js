@@ -4,10 +4,13 @@ import Dialog from 'react-toolbox/lib/dialog';
 
 class Modal extends React.Component {
 
-    state = {
-        active: true
-    };
-
+    constructor (...args) {
+        super(...args);
+        this.state = {
+            active: true
+        };
+        this.handleChange = this.handleChange.bind(this);
+    }
     handleToggle = () => {
         this.setState({active: false});
     };
